@@ -1,12 +1,18 @@
 /**
  * Created by Konstantin on 23.07.2017.
  */
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-let dbURI = 'mongodb://administrator:administrator@ds119533.mlab.com:19533/mongodbtest';
+let dbURI = 'mongodb://localhost:32769/nodemongo';
 
-db = mongoose.connect(dbURI, { useMongoClient: true });
+db = mongoose.createConnection(dbURI, {
+    user: "admin",
+    pass: "1234",
+    // useMongoClient: true,
+    useNewUrlParser: true,
+    // useUnifiedTopology: true
+})
 
 // CONNECTION EVENTS
 // When successfully connected
