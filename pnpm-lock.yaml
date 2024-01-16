@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@material-tailwind/html':
+    specifier: ^2.0.0
+    version: 2.0.0
   body-parser:
     specifier: ~1.20.2
     version: 1.20.2
@@ -32,6 +35,9 @@ dependencies:
   npm-check-updates:
     specifier: ^16.10.18
     version: 16.10.18
+  pnpm:
+    specifier: ^8.6.12
+    version: 8.6.12
   serve-favicon:
     specifier: ~2.5.0
     version: 2.5.0
@@ -60,6 +66,13 @@ packages:
       strip-ansi-cjs: /strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: /wrap-ansi@7.0.0
+    dev: false
+
+  /@material-tailwind/html@2.0.0:
+    resolution: {integrity: sha512-+om7F4fft1bejy3vWb9ZFYB3kRnFAtcgMUybi/0A5jvDJHR5rS+ieciBQ9K1GrZas4vx3adz1k7fV2+EFHmZ0A==}
+    dependencies:
+      deepmerge: 4.3.1
+      material-ripple-effects: 2.0.1
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -731,6 +744,11 @@ packages:
   /deep-extend@0.6.0:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
     engines: {node: '>=4.0.0'}
+    dev: false
+
+  /deepmerge@4.3.1:
+    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
+    engines: {node: '>=0.10.0'}
     dev: false
 
   /defer-to-connect@2.0.1:
@@ -1526,6 +1544,10 @@ packages:
       - supports-color
     dev: false
 
+  /material-ripple-effects@2.0.1:
+    resolution: {integrity: sha512-hHlUkZAuXbP94lu02VgrPidbZ3hBtgXBtjlwR8APNqOIgDZMV8MCIcsclL8FmGJQHvnORyvoQgC965vPsiyXLQ==}
+    dev: false
+
   /media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
     engines: {node: '>= 0.6'}
@@ -2110,6 +2132,12 @@ packages:
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+
+  /pnpm@8.6.12:
+    resolution: {integrity: sha512-Eza4C5SO/Xl5IYozupbZ5NOA5leBRPYxmXmXfe7G4/4uCkRLhks84rB33aitxNZU/uMrnDGGjwrLktoKvPjqHA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /proc-log@3.0.0:
     resolution: {integrity: sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A==}

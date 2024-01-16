@@ -4,6 +4,7 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
+// hosted on docker locally
 let dbURI = 'mongodb://localhost:32769/nodemongo';
 
 db = mongoose.createConnection(dbURI, {
